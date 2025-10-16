@@ -1,17 +1,6 @@
-server:
-  port: 9099
-
 spring:
   application:
-    name: CONFIGSERVER
-
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/neeleshpatel/microservices-config.git
-          clone-on-start: true
-          default-label: main  # or 'master' if your repo uses that
+    name: config-default
 
 eureka:
   instance:
