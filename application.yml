@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/your-username/your-config-repo.git  # 🔁 Replace with your Git repo URL
+          uri: https://github.com/neeleshpatel/microservices-config.git
           clone-on-start: true
           default-label: main  # or 'master' if your repo uses that
 
