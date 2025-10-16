@@ -1,6 +1,17 @@
+server:
+  port: 9099
+
 spring:
   application:
-    name: config-default
+    name: CONFIGSERVER
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/your-username/your-config-repo.git  # 🔁 Replace with your Git repo URL
+          clone-on-start: true
+          default-label: main  # or 'master' if your repo uses that
 
 eureka:
   instance:
